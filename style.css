@@ -1,0 +1,14 @@
+body {
+  --red: #ef5945;
+  --blue: #51bdc4;
+  --skin: #fffac7;
+  --yellow: #ece74f;
+  --green: #819e49;
+  --black: #2e0943; 
+}
+
+body, body *, body *::before, body *::after {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+}
