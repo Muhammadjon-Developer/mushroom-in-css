@@ -131,3 +131,44 @@ body *::after {
   background-color: var(--black);
   box-shadow: 9px 0 var(--black);
 }
+
+.mushroom__leg {
+  top: 150px;
+  left: 83px;
+  width: 20px;
+  height: 170px;
+  background: radial-gradient(
+        farthest-side at 50% 100%,
+        transparent 100%,
+        transparent 0
+      )
+      0 0 / 100% 5px no-repeat,
+    linear-gradient(
+      0deg,
+      var(--black) 30px,
+      white 0 40px,
+      var(--black) 0 44px,
+      white 0 48px,
+      var(--black) 0 52px,
+      transparent 0
+    ),
+    var(--skin);
+  border: 4px solid var(--black); 
+  border-radius: 0 0 8em 8em;
+}
+
+.mushroom__leg::before {
+  bottom: -4px;
+  left: -4px;
+  width: 50px; 
+  height: 25px;
+  background: radial-gradient(farthest-side, white 100%, transparent 0) 15px 3px / 30px 30px no-repeat, linear-gradient(180deg, var(--black) 14px, white);
+  border-radius: 0 50px 10px 10px / 0 20px 10px 10px;
+  border: 4px solid var(--black);
+}
+
+.mushroom__leg-right {
+  top: 153px;
+  left: 143px;
+  height: 166px;
+}
